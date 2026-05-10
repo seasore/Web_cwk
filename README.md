@@ -2,8 +2,6 @@
 
 Educational search tool for **[Quotes to Scrape](https://quotes.toscrape.com/)**: a polite crawler, a serialised inverted index with positional statistics, conjunctive (AND) multi-word search, **`tfidf` / Okapi `bm25` / `hybrid` / `bm25_proximity` ranking** (see `src/search.py`), and lightweight **“did you mean”** suggestions.
 
-Detailed run-book (including **edge cases** for demos) lives in [`RUNNING_AND_EDGE_CASES.md`](RUNNING_AND_EDGE_CASES.md)（中文）.
-
 ## Features vs. the brief
 
 - **Crawl target**: all paginated listing pages; each ``div.quote`` becomes its own logical document. Synthetic URLs use ``<listing-url>#quote-<idx>`` so every hit is deep-linkable.
